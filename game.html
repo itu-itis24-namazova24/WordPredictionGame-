@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Prediction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Word Prediction Game</h1>
+        <p class="tagline">Hope you have fun, playing my game :)</p>
+    </header>
+    <main class="main-content">
+
+
+        <div class="game-frame">
+            
+            <div class="game-info">
+                <div class="lives">
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                </div>
+                <div class="score">Score: 0</div>
+            </div>
+        
+            
+            <div class="word-display">
+                <span class="letter" id="letter-0">_</span>
+                <span class="letter" id="letter-1">_</span>
+                <span class="letter" id="letter-2">_</span>
+                <span class="letter" id="letter-3">_</span>
+                <span class="letter" id="letter-4">_</span>
+            </div>
+        
+            
+            <div class="game-controls">
+                <input type="text" id="guess" maxlength="5" placeholder="Enter a letter or word">
+                <button class="btn" onclick="submitGuess()">Submit</button>
+                <button class="btn reset" onclick="resetGame()">Reset Game</button>
+            </div>
+        
+            
+            <div id="feedback" class="feedback"></div>
+        </div>
+
+        
+        <div id="feedback" class="feedback"></div>
+    </main>
+    
+    <script src="game.js"></script>
+</body>
+</html>
